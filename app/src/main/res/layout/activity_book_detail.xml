@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/book_background"
+    tools:context=".BookDetailActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/book_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIconTint="@color/book_text_primary"
+        app:title="@string/title_detail"
+        app:titleTextColor="@color/book_text_primary" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/book_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:id="@+id/tv_detail_book_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/book_text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="代码整洁之道" />
+
+            <TextView
+                style="@style/Widget.Book.DetailLabel"
+                android:text="@string/label_author" />
+
+            <TextView
+                android:id="@+id/tv_detail_author"
+                style="@style/Widget.Book.DetailValue"
+                tools:text="Robert C. Martin" />
+
+            <TextView
+                style="@style/Widget.Book.DetailLabel"
+                android:text="@string/label_publisher" />
+
+            <TextView
+                android:id="@+id/tv_detail_publisher"
+                style="@style/Widget.Book.DetailValue"
+                tools:text="人民邮电出版社" />
+
+            <TextView
+                style="@style/Widget.Book.DetailLabel"
+                android:text="@string/label_price" />
+
+            <TextView
+                android:id="@+id/tv_detail_price"
+                style="@style/Widget.Book.DetailValue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="¥ 59.00" />
+
+            <TextView
+                style="@style/Widget.Book.DetailLabel"
+                android:text="@string/label_isbn" />
+
+            <TextView
+                android:id="@+id/tv_detail_isbn"
+                style="@style/Widget.Book.DetailValue"
+                tools:text="9787115216878" />
+
+            <TextView
+                style="@style/Widget.Book.DetailLabel"
+                android:text="@string/label_publish_date" />
+
+            <TextView
+                android:id="@+id/tv_detail_publish_date"
+                style="@style/Widget.Book.DetailValue"
+                tools:text="2010-01" />
+
+            <TextView
+                style="@style/Widget.Book.DetailLabel"
+                android:text="@string/label_category" />
+
+            <TextView
+                android:id="@+id/tv_detail_category"
+                style="@style/Widget.Book.DetailValue"
+                tools:text="编程实践" />
+
+            <TextView
+                style="@style/Widget.Book.DetailLabel"
+                android:text="@string/label_description" />
+
+            <TextView
+                android:id="@+id/tv_detail_description"
+                style="@style/Widget.Book.DetailValue"
+                android:lineSpacingExtra="4dp"
+                tools:text="本书讲述编写整洁代码的原则与实践。" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

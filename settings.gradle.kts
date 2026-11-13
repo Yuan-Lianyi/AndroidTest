@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AndroidTest"
+rootProject.name = "YuanLianyiBook"
 include(":app")

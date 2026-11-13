@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 详情页：字段名 -->
+    <style name="Widget.Book.DetailLabel" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:textColor">@color/book_text_secondary</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- 详情页：字段值 -->
+    <style name="Widget.Book.DetailValue" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:textColor">@color/book_text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

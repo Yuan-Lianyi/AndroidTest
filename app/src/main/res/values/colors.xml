@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- 学号尾号为 5，界面文字统一使用蓝色 -->
+    <color name="book_text_primary">#FF1565C0</color>
+    <color name="book_text_secondary">#FF1976D2</color>
+    <color name="book_divider">#FF90CAF9</color>
+    <color name="book_background">#FFFFFFFF</color>
 </resources>
